@@ -1,0 +1,21 @@
+{% extends '_layout.html' %}
+
+{% block body_content %}
+
+    <div class="row">
+        <div class="col-md-6">
+            {% for player in object_list %}
+                <div class="panel panel-default">
+                    <div class="panel-heading"><b>{{ player.name }}</b></div>
+                    <div class="panel-body">
+                        <ul>
+                            <li>Team :{{ player.team }}</li>
+                            <li>Age : {{ player.age }}</li>
+                            <li>Position : {{ player.position }}</li>
+                        </ul>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock body_content %}
