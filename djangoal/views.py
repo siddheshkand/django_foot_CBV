@@ -21,3 +21,4 @@ class HelloWorldView(View):
     @staticmethod
     def get(request):
         return HttpResponse("Hello CBV !")
+
